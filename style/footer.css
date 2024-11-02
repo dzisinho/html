@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color:grey ;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.menu-column, .social-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.menu-column h4, .social-column h4 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-size: cover;
+    transition: background-color 0.3s;
+}
+
+.facebook {
+    background-image: url(facebook.png);
+}
+
+.twitter {
+    background-image: url(twitter.png);
+}
+
+.youtube {
+    background-image:url(youtube.png);
+}
+
+.facebook:hover {
+    background-color: blue; 
+}
+
+.twitter:hover {
+    background-color: blue; 
+}
+
+.youtube:hover {
+    background-color: red; 
+}

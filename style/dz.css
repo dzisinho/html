@@ -1,0 +1,37 @@
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    padding: 20px;
+    margin: 5px 0;
+}
+.even {
+    background-color: #e0f7fa; /* світло-блакитний */
+}
+.odd {
+    background-color: #b2ebf2; /* трохи темніший блакитний */
+}
+.completed {
+    background-color: #dcdcdc; /* сірий фон */
+    text-decoration: line-through;
+    position: relative;
+}
+.completed::before {
+    content: "❌"; 
+    position: absolute;
+    right: 800px;
+    color: red;
+}
+.pending::before {
+    content: "✔️"; /* іконка без позначки */
+    position: absolute;
+    left: 10px;
+    color:purple
+}
